@@ -43,10 +43,11 @@
       
        .parallax {
       
-      background-image: url("cover.jpg");
-      min-height: 500px; 
-      height:600px; width:100%;
+      background-image: url("https://www.modelunitednations.it/wp-content/uploads/2018/09/cover.jpg");
+      min-height: 48vw; 
+      height:600px; width:100vw;
          position: relative !important;
+         background-size: cover;
       ;
      
       background-attachment: fixed;
@@ -74,7 +75,7 @@
         }
                                 h1{
                                       font-family: 'Righteous', serif;
-                                      font-size: 100px;
+                                      font-size: 80px;
                                       border:2px solid #093145;
                                       padding-left: 50px;
                                       padding-right: 50px;
@@ -104,7 +105,7 @@
                                 }
                                 h2
                                 {
-                                  font-size: 45px;
+                                  font-size: 3vw !important;
                                   color:#093145;
                                     font-weight: lighter !important; 
                                     text-align: center;
@@ -145,21 +146,78 @@
                   @media only screen and (max-width: 600px) {
             .example {background: red;}
             h1{
-                font-size: 45px;
+                font-size: 55px;
               }
               .about1{
-                margin: 0px;
+                margin: 5px;
               }
-              h2{
-                font-size: 35px;
-              }
+             
               p{
-                font-size: 20px !important;
+                font-size: 15px !important;
               }
               .tech
               {
                 font-size: 20px !important;
               }
+              a
+              {
+                display: block;
+                width: 100%
+              }
+              
+
+              #about {
+						  bottom: 240px !important;
+						  left: 150px !important;
+
+						    
+						}
+
+						#blog {
+						  bottom: 160px !important;
+						    left: 150px !important;
+
+						}
+
+						#projects {
+						bottom: 80px !important;
+						 left: 150px !important;
+
+						}
+
+						#contact {
+						  bottom: 0px !important;
+						  left: 150px !important;
+
+						}
+
+						.contact
+						{
+							margin-left: 0px !important;
+						}
+
+						.tuc{
+							display: none !important;						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
             }
           }
           /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -321,51 +379,6 @@ bottom: 5px;
 }
 
 
-#back-top {
-  position: fixed;
-  bottom: 30px;
-  margin-left: -150px;
-}
-
-#back-top a {
-  width: 108px;
-  display: block;
-  text-align: center;
-  font: 11px/100% Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #bbb;
-
-  /* transition */
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
-}
-#back-top a:hover {
-  color: #000;
-}
-
-/* arrow icon (span tag) */
-#back-top span {
-  width: 108px;
-  height: 108px;
-  display: block;
-  margin-bottom: 7px;
-  background: #ddd url(up-arrow.png) no-repeat center center;
-
-  /* rounded corners */
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-
-  /* transition */
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
-}
-#back-top a:hover span {
-  background-color: #777;
-}
 
 
 
@@ -388,7 +401,7 @@ a:hover
 
 </head>
 <body id="top">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+ <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -420,7 +433,7 @@ $(document).ready(function(){
   <script src="js/wow.min.js"></script>
               <script>
               new WOW().init();
-              </script>
+              </script> -->
 
 
   <!--<body onload="myFunction()" ">
@@ -442,13 +455,13 @@ function showPage() {
 <div id="pagewrap>"
      
        <div class="parallax">
-       	<div id="mySidenav" class="sidenav">
+       	<div id="mySidenav" >
 		  <a  href="index.html" style="color: #36D7B7 !important;" id="about">About</a><br><br>
 		  <a href="agendas.html" id="blog">Agendas</a>
 		  <a href="form.html" id="projects">Register</a>
 		  <a href="#con" id="contact">Contact </a>
-       <h2 style="border:2px solid #093145; display: inline-block;padding: 20px;color: white;background-color:#093145;border-radius: 20px;top:0px !important;"><img src="logo1.png"  style="border-radius: 20px;margin-right: 10px;top:0px;left: 30px;">Technical United Conference 2019</h2>
-       <img src="TUC.jpeg" style="float: right !important;width: 30%;">
+       <h2 style="border:2px solid #093145; display: inline-block;padding: 20px;color: white;background-color:#093145;border-radius: 20px;top:0px !important;"><img src="logo1.png"  style="border-radius: 20px;margin-right: 10px;top:0px;left: 30px;width:13vw">Technical United Conference 2019</h2>
+       <img class="tuc" src="TUC.jpeg" style="float: right !important;width: 30vw;">
 		  </div>
 		
 
@@ -484,7 +497,7 @@ function showPage() {
     </div>
 </div>
 <div >
-  <h1 style="margin-left: 800px;" id="con">Contact Us</h1><br>
+  <h1 class="contact" style="margin-left: 800px;" id="con">Contact Us</h1><br>
   
   <br>
   <div class="container cont"> <br><p class="wow slideInUp animated animated" style="visibility: visible;"><span class="accent_clr">
@@ -502,8 +515,8 @@ function showPage() {
     <h1 class="head1">Our Partners</h1>
     <center> <img class="spi" src="http://www.ietvit.com/tuc/assets/images/iet_chennai.png"> <a href="http://www.e-web-solutions.net/" target="_top"><img class="spi" src="http://www.ietvit.com/tuc/assets/images/ewebsolution.png"></a> <a href="http://www.spiroprojects.com/final-year-projects-in-vellore.php" target="_top"><img class="spi" src="http://www.ietvit.com/tuc/assets/images/spiro.png"></a> <a href="http://www.wabag.com/" target="_top"><img class="spi" src="http://www.ietvit.com/tuc/assets/images/wabang_logo.png"></a></center>
     <footer>
-      <img src="logo2.png" width="10%" height="50px;">
-      <h2 style="display: inline-block;font-size: 19px;text-align: center !important;color: #36D7B7;">Designed and Developed by Ishan Arora|Second website of 4 sem </h2>
+      <img src="logo2.png" height ="50vw" ">
+      <h2 style="display: inline-block;font-size: 19px !important;text-align: center !important;color: #36D7B7;">Designed and Developed by Ishan Arora|Second website of 4 sem </h2>
     </footer> 
     <p id="back-top">
     <a href="#top"><span></span>Back to Top</a>
